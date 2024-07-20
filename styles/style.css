@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&family=Lato:wght@400&display=swap');
+
+:root {
+    --cor-primaria: #737373;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: black;
+    --cor-hover: darkgray;
+    --fonte-primaria: 'Playwrite PE', sans-serif;
+    --fonte--secundaria: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__meunu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte--secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+.mim__destaque {
+    color: black;
+}
+
+.apresentacao {
+    padding: 5% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte--secundaria);
+}
+
+.img-resize {
+    width: 1050px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.apresentacao__links {
+     display: flex; /* Coloca os Quadrados um ao lado do outro */
+     flex-direction: column; /* Coloca os Quadrados na Vertical */
+     justify-content: space-between; 
+     align-items: center; /* Alinha os botões ao centro */
+     gap: 32px; /* adiciona espaços aos botões */
+}
+
+.apresentacao__links__item {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Espaço entre imagem e texto */
+    border: 2px solid var(--cor-terciaria); /* Borda para destaque, se desejado */
+    border-radius: 8px; /* Borda arredondada */
+    padding: 10px;
+    background-color: var(--cor-primaria); /* Fundo da seção com a cor primária */
+    color: var(--cor-secundaria); /* Cor do texto dentro do item */
+}
+
+.apresentacao__links__item img {
+    width: 100px; /* Tamanho da imagem */
+    height: auto;
+    border-radius: 8px; /* Arredondar as bordas da imagem */
+}
+
+.apresentacao__links__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espaço entre as linhas de texto */
+}
+
+.apresentacao__links__info h2 {
+    font-size: 1.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__links__info p {
+    font-size: 1rem;
+    font-family: var(--fonte--secundaria);
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 800;
+    font-size: 1.5rem;
+
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 5px double var(--cor-terciaria);
+    width: 50%; /* Tamanho do botão na Vertical*/
+    text-align: center;
+    border-radius: 8px; /* Borda Circular*/
+    font-size: 1.5rem; /* Tamanho da Fonte*/
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte--secundaria);
+    
+}
+
+.apresentacao__links__navegacao:hover {
+    cursor: pointer;
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+    width: 55%;
+    border: 2px solid black;
+    border-radius: 5%
+
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-hover);
+    text-align: center;
+    font-family: var(--cor-primaria);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.nome_destaque {
+    color: var(--cor-terciaria);
+
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__meunu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__imagem {
+        width: 95%;
+        border: 2px solid black;
+        border-radius: 5%
+
+    }
+}
