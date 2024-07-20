@@ -75,39 +75,39 @@ body {
 }
 
 .img-resize {
-    width: 1050px; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 1050px; 
+    height: auto; 
 }
 
 .apresentacao__links {
-     display: flex; /* Coloca os Quadrados um ao lado do outro */
-     flex-direction: column; /* Coloca os Quadrados na Vertical */
+     display: flex; 
+     flex-direction: column; 
      justify-content: space-between; 
-     align-items: center; /* Alinha os botões ao centro */
-     gap: 32px; /* adiciona espaços aos botões */
+     align-items: center; 
+     gap: 32px; 
 }
 
 .apresentacao__links__item {
     display: flex;
     align-items: center;
-    gap: 16px; /* Espaço entre imagem e texto */
-    border: 2px solid var(--cor-terciaria); /* Borda para destaque, se desejado */
-    border-radius: 8px; /* Borda arredondada */
+    gap: 16px; 
+    border: 2px solid var(--cor-terciaria); 
+    border-radius: 8px; 
     padding: 10px;
-    background-color: var(--cor-primaria); /* Fundo da seção com a cor primária */
-    color: var(--cor-secundaria); /* Cor do texto dentro do item */
+    background-color: var(--cor-primaria); 
+    color: var(--cor-secundaria); 
 }
 
 .apresentacao__links__item img {
-    width: 100px; /* Tamanho da imagem */
+    width: 100px; 
     height: auto;
-    border-radius: 8px; /* Arredondar as bordas da imagem */
+    border-radius: 8px; 
 }
 
 .apresentacao__links__info {
     display: flex;
     flex-direction: column;
-    gap: 8px; /* Espaço entre as linhas de texto */
+    gap: 8px; 
 }
 
 .apresentacao__links__info h2 {
@@ -132,10 +132,10 @@ body {
     justify-content: center;
     gap: 16px;
     border: 5px double var(--cor-terciaria);
-    width: 50%; /* Tamanho do botão na Vertical*/
+    width: 50%; 
     text-align: center;
-    border-radius: 8px; /* Borda Circular*/
-    font-size: 1.5rem; /* Tamanho da Fonte*/
+    border-radius: 8px; 
+    font-size: 1.5rem; 
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
